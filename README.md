@@ -2,10 +2,7 @@
 ![platform](https://img.shields.io/static/v1?label=platform&message=mac-intel%20|%20mac-arm%20|%20win-64&color=blue)
 [![license](https://img.shields.io/github/license/miyako/4d-tips-4DA)](LICENSE)
 
-# 4d-tips-4DA
-.4DAファイルについて
-
-# ユーザーフォームとは
+# ユーザーフォーム
 
 v2004では**ユーザーフォーム**が利用できるようになりました。ユーザーフォームは，テーブル入出力フォームをカスタマイズした派生フォームで，テーブル入出力フォームの代わりに使用したり，簡易版のフォームエディターで修正したりすることができます。
 
