@@ -48,3 +48,4 @@ v2004でフォームを作成すると`.4DB`ストラクチャファイルと一
 
 
 
+<img width="461" alt="" src="https://user-images.githubusercontent.com/1725068/212274220-51396a62-03ae-42f1-8d73-8d6cc0cebaf5.png">
