@@ -44,7 +44,7 @@ v2004でフォームを作成すると`.4DB`ストラクチャファイルと一
 
 <img width="480" alt="" src="https://user-images.githubusercontent.com/1725068/212257630-68771bf2-6664-4c95-896d-2e9f105565fa.png">
 
-`.4DA`ファイルの読み書きには，プラグインSDKの内部リソースマネージャー（`PA_OpenResFile`など）が必要です。内部リソースはMacOSやAltura Mac2Winのリソース管理と概念的に似ていますが，独自の実装であり，標準コマンド（[Open resource file](https://doc.4d.com/4Dv19/4D/19.5/Open-resource-file.301-6137346.ja.html)など）では代用できません。
+`.4DA`ファイルの読み書きには，プラグインSDKの[内部リソースマネージャー](https://developer.4d.com/4D-Plugin-SDK/CMU84573.HTM)（`PA_OpenResFile`など）が必要です。内部リソースはMacOSやAltura Mac2Winのリソース管理と概念的に似ていますが，独自の実装であり，標準コマンド（[Open resource file](https://doc.4d.com/4Dv19/4D/19.5/Open-resource-file.301-6137346.ja.html)など）では代用できません。
 
 
 
