@@ -59,7 +59,7 @@ v19/18で開くことができる（つまり直接アップグレードする�
 
 `.4DA`ファイルの読み書きには，プラグインSDKの[内部リソースマネージャー](https://developer.4d.com/4D-Plugin-SDK/CMU84573.HTM)（`PA_OpenResFile`など）が必要です。内部リソースはMacOSやAltura Mac2Winのリソース管理と概念的に似ていますが，独自の実装であり，標準コマンド（[Open resource file](https://doc.4d.com/4Dv19/4D/19.5/Open-resource-file.301-6137346.ja.html)など）では代用できません。
 
-v19/18のSQL（下記）または[PA_CreateResFile](https://developer.4d.com/4D-Plugin-SDK/CMU84569.HTM)で作成した`.4DB`にv2004やv13のリソースを書き込むと`PR4Dリソースがダメージを受けています`というエラーになり，修復ができません。
+v19/18のSQL（下記）または[PA_CreateResFile](https://developer.4d.com/4D-Plugin-SDK/CMU84569.HTM)で作成した`.4DB`にv2004やv13のリソースを書き込むと「`PR4D`リソースがダメージを受けています」というエラーになり，修復ができません。
 
 ```sql
 CREATE DATABASE IF NOT EXISTS DATAFILE :$path;
@@ -68,7 +68,7 @@ USE DATABASE SQL_INTERNAL;
 ```
 <img width="260" alt="" src="https://user-images.githubusercontent.com/1725068/212609956-9ec84354-baa2-47f3-a8e5-bace629c2214.png">
 
-v13のストラクチャに`FO4D`リソースを書き込む必要があります。
+リソースを移植する対象はファイルメニューから作成した標準のストラクチャファイルでなければなりません。ただし，元のストラクチャとは別の`.4DB`に`.4DA`のリソースを移植すると，`CC4D`リソースの参照が合わないため，オブジェクトメソッド・フォームメソッド・プロジェクトメソッドがオーファンになります。メニューバー・スタイルシート・ヘルプTipsなども同様です。
 
 ### ステップ②
 
