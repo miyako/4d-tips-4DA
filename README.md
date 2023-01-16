@@ -78,5 +78,20 @@ v2004でユーザーフォームを作成します。
 v13にコンバートします。
 <img src="https://user-images.githubusercontent.com/1725068/212603785-a80ed4b6-e71b-4aed-a18f-6f744e951ca6.png" width="800" />
 
+v13の`.4DB`をクローンし，v2004の`.4DA`からリソースを移植します。
+
+```4d
+$source:=Folder(fk resources folder).folder("v2004").file("test.4DA")
+$target:=Folder(fk resources folder).folder("v13").file("test.4DB")
+
+$clone:=Folder(fk desktop folder).file("clone.4DB")
+
+If (Not($clone.exists))
+	$clone:=$target.copyTo($clone.parent; $clone.fullName)
+	$status:=Clone structure file($source.platformPath; $clone.platformPath)
+End if 
+```
+
+<img width="662" alt="" src="https://user-images.githubusercontent.com/1725068/212604597-a6506115-882d-474c-a413-6fd3d5aeab9e.png">
 
 
