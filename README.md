@@ -115,7 +115,7 @@ End if
 
 <img width="480" alt="" src="https://user-images.githubusercontent.com/1725068/212604888-7d37b65a-bee3-491c-ab1b-b649c6dbcb92.png">
 
-MSCでアプリケーションを検査すると「リンクのないフォーム」が検出されます。
+MSCでアプリケーションを検査すると「リンクのないフォーム」が検出されます。これは，ユーザーフォームをテーブルフォーム（`TF4D`）ではなく無所属のフォーム（`FO4D`）としてストラクチャに追加しているためです。
 
 <img width="464" alt="" src="https://user-images.githubusercontent.com/1725068/212605106-6431df64-6bf9-468c-b352-75f09d8ceab5.png">
 
