@@ -74,3 +74,9 @@ MSCでアプリケーションを修復し，オーファンフォームを炙�
 v2004でユーザーフォームを作成します。
 
 <img src="https://user-images.githubusercontent.com/1725068/212602587-e8e53b40-c9df-49c5-a5a7-9938f4839d51.png" width="800" />
+
+v13にコンバートします。
+<img src="https://user-images.githubusercontent.com/1725068/212603785-a80ed4b6-e71b-4aed-a18f-6f744e951ca6.png" width="800" />
+
+
+
