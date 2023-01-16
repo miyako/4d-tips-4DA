@@ -59,6 +59,18 @@ v19/18で開くことができる（つまり直接アップグレードする�
 
 `.4DA`ファイルの読み書きには，プラグインSDKの[内部リソースマネージャー](https://developer.4d.com/4D-Plugin-SDK/CMU84573.HTM)（`PA_OpenResFile`など）が必要です。内部リソースはMacOSやAltura Mac2Winのリソース管理と概念的に似ていますが，独自の実装であり，標準コマンド（[Open resource file](https://doc.4d.com/4Dv19/4D/19.5/Open-resource-file.301-6137346.ja.html)など）では代用できません。
 
+またv19で作成した`.4DB`にv2004やv13のリソースを書き込むと`PR4Dリソースがダメージを受けています`というエラーになり，修復ができません。
+
+```4d
+Begin SQL
+	CREATE DATABASE IF NOT EXISTS DATAFILE :$path;
+	USE DATABASE DATAFILE :$path AUTO_CLOSE;--set PR4D
+	USE DATABASE SQL_INTERNAL;
+End SQL
+```
+
+または[PA_CreateResFile](https://developer.4d.com/4D-Plugin-SDK/CMU84569.HTM)
+
 ### ステップ②
 
 `.4DA`から取り出した`FO4D`内部リソースを`.4DB`にコピーする
