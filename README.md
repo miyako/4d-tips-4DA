@@ -94,4 +94,10 @@ End if
 
 <img width="662" alt="" src="https://user-images.githubusercontent.com/1725068/212604597-a6506115-882d-474c-a413-6fd3d5aeab9e.png">
 
+クローンした`.4DB`をv19で開きます。
+
+<img width="480" alt="" src="https://user-images.githubusercontent.com/1725068/212604850-99910450-5df0-49c3-914f-8d2c30ff13b2.png">
+
+<img width="480" alt="" src="https://user-images.githubusercontent.com/1725068/212604888-7d37b65a-bee3-491c-ab1b-b649c6dbcb92.png">
+
 
