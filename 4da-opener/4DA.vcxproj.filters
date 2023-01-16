@@ -4,7 +4,10 @@
     <ClCompile Include="4D Plugin API\4DPluginAPI.c">
       <Filter>4D Plugin API</Filter>
     </ClCompile>
-    <ClCompile Include="4DPlugin-4DA-Opener.cpp" />
+    <ClCompile Include="4DPlugin-4DA.cpp">
+      <Filter>4D Plugin API</Filter>
+    </ClCompile>
+    <ClCompile Include="support\4DPlugin-JSON.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4D Plugin API\4DPluginAPI.h">
@@ -22,7 +25,10 @@
     <ClInclude Include="4D Plugin API\PublicTypes.h">
       <Filter>4D Plugin API</Filter>
     </ClInclude>
-    <ClInclude Include="4DPlugin-4DA-Opener.h" />
+    <ClInclude Include="4DPlugin-4DA.h">
+      <Filter>4D Plugin API</Filter>
+    </ClInclude>
+    <ClInclude Include="support\4DPlugin-JSON.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="4D Plugin API">
