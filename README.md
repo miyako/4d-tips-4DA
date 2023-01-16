@@ -50,7 +50,11 @@ v2004でフォームを作成すると`.4DB`ストラクチャファイルと一
 
 <img width="461" alt="" src="https://user-images.githubusercontent.com/1725068/212274220-51396a62-03ae-42f1-8d73-8d6cc0cebaf5.png">
 
-v2004のストラクチャファイルに`FO4D`リソースを追加することもできますが，現行バージョンの4Dでバイナリデータベースを開こうとすると，エラーが返されます。v19/18で開くことができる（つまり直接アップグレードすることができる）最古バージョンはv13です。v2004のストラクチャファイルは，一旦，v13を経由する必要があります。
+v2004のストラクチャファイルに`FO4D`リソースを追加することもできますが，現行バージョンの4Dでバイナリデータベースを開こうとすると，エラーが返されます。MSCで修復することもできません。
+
+<img width="260" alt="" src="https://user-images.githubusercontent.com/1725068/212586061-3d13a659-1df9-4d54-a871-be3631dc3777.png">
+
+v19/18で開くことができる（つまり直接アップグレードすることができる）最古バージョンはv13です。v2004のストラクチャファイルは，一旦，v13を経由する必要があります。
 
 * [以前のバージョンからのデータベースの変換](https://doc.4d.com/4Dv19/4D/19/Converting-databases-from-previous-versions.300-5416699.ja.html)
 * [library.4d-japan.com](https://library.4d-japan.com/PRODUCTS/4D/Archives/v13_Line/)
