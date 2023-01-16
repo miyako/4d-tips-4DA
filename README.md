@@ -100,4 +100,12 @@ End if
 
 <img width="480" alt="" src="https://user-images.githubusercontent.com/1725068/212604888-7d37b65a-bee3-491c-ab1b-b649c6dbcb92.png">
 
+MSCでアプリケーションを検査すると「リンクのないフォーム」が検出されます。
+
+<img width="464" alt="" src="https://user-images.githubusercontent.com/1725068/212605106-6431df64-6bf9-468c-b352-75f09d8ceab5.png">
+
+MSCでアプリケーションを修復すると「リンクのないフォーム」がオーファンプロジェクトフォームとして復活します。IDが再利用されていなければ，オリジナルフォームのロックを解除したことで消滅した「幻」のフォームも復活します。
+
+<img width="711" alt="" src="https://user-images.githubusercontent.com/1725068/212605195-97f7e20f-2117-4de2-bbf7-b0c88f6f1392.png">
+
 
