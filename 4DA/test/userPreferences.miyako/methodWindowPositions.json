@@ -7,8 +7,20 @@
 	},
 	"Sources/Methods/TEST_clone.4dm": {
 		"left": 175,
-		"top": 596,
+		"top": 988,
 		"width": 1176,
-		"height": 427
+		"height": 372
+	},
+	"Sources/Methods/TEST_clone_all.4dm": {
+		"left": 442,
+		"top": 432,
+		"width": 1176,
+		"height": 579
+	},
+	"Sources/Methods/TEST_clone_v19.4dm": {
+		"left": 442,
+		"top": 460,
+		"width": 1176,
+		"height": 551
 	}
 }

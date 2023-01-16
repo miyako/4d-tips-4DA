@@ -5,11 +5,19 @@
 			"id": 2147483647,
 			"codeDescriptor": {
 				"type": 1,
-				"methodName": "TEST_clone"
+				"methodName": "TEST_clone_v19"
 			}
 		},
 		{
 			"type": "explorer"
+		},
+		{
+			"type": "method",
+			"id": 2147483645,
+			"codeDescriptor": {
+				"type": 1,
+				"methodName": "TEST_clone"
+			}
 		}
 	]
 }
