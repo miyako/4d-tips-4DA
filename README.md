@@ -59,6 +59,17 @@ v19/18で開くことができる（つまり直接アップグレードする�
 
 `.4DA`ファイルの読み書きには，プラグインSDKの[内部リソースマネージャー](https://developer.4d.com/4D-Plugin-SDK/CMU84573.HTM)（`PA_OpenResFile`など）が必要です。内部リソースはMacOSやAltura Mac2Winのリソース管理と概念的に似ていますが，独自の実装であり，標準コマンド（[Open resource file](https://doc.4d.com/4Dv19/4D/19.5/Open-resource-file.301-6137346.ja.html)など）では代用できません。
 
+v19/18のSQL（下記）または[PA_CreateResFile](https://developer.4d.com/4D-Plugin-SDK/CMU84569.HTM)で作成した`.4DB`にv2004やv13のリソースを書き込むと「`PR4D`リソースがダメージを受けています」というエラーになり，修復ができません。
+
+```sql
+CREATE DATABASE IF NOT EXISTS DATAFILE :$path;
+USE DATABASE DATAFILE :$path AUTO_CLOSE;--set PR4D
+USE DATABASE SQL_INTERNAL;
+```
+<img width="260" alt="" src="https://user-images.githubusercontent.com/1725068/212609956-9ec84354-baa2-47f3-a8e5-bace629c2214.png">
+
+リソースを移植する対象はファイルメニューから作成した標準のストラクチャファイルでなければなりません。ただし，元のストラクチャとは別の`.4DB`に`.4DA`のリソースを移植すると，`CC4D`リソースの参照が合わないため，オブジェクトメソッド・フォームメソッド・プロジェクトメソッドがオーファンになります。メニューバー・スタイルシート・ヘルプTipsなども同様です。
+
 ### ステップ②
 
 `.4DA`から取り出した`FO4D`内部リソースを`.4DB`にコピーする
@@ -68,6 +79,10 @@ v13以降にコンバートしたストラクチャであれば，デザイン�
 ### ステップ③
 
 MSCでアプリケーションを修復し，オーファンフォームを炙り出します。v13でコンバートした場合，ピクチャライブラリの番号が符号反転し，表示されないかもしれません。また，QuickDraw画像（PICT形式）が表示されないという問題もあります（macOSのFinderや32-bit版の4Dで変換することができます）。とはいえ，この方法でユーザーフォームをサルベージすることができます。
+
+### ステップ④
+
+サルベージしたユーザーフォームは，通常のプロジェクトフォームやテーブルフォームと同じように編集することができます。v18以前の32-bit版であれば[FORM Convert to dynamic](https://doc.4d.com/4Dv19/4D/19.5/FORM-Convert-to-dynamic.301-6136687.ja.html)コマンドでJSONフォームに変換することができます。あるいは，一括してプロジェクトモードに移行できるかもしれません。
 
 ## 例題
 
@@ -108,4 +123,4 @@ MSCでアプリケーションを修復すると「リンクのないフォー�
 
 <img width="711" alt="" src="https://user-images.githubusercontent.com/1725068/212605195-97f7e20f-2117-4de2-bbf7-b0c88f6f1392.png">
 
-
+使用したプラグインは[Releases](https://github.com/miyako/4d-tips-4DA/releases)からダウンロードできます。
