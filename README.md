@@ -46,6 +46,6 @@ v2004でフォームを作成すると`.4DB`ストラクチャファイルと一
 
 `.4DA`ファイルの読み書きには，プラグインSDKの[内部リソースマネージャー](https://developer.4d.com/4D-Plugin-SDK/CMU84573.HTM)（`PA_OpenResFile`など）が必要です。内部リソースはMacOSやAltura Mac2Winのリソース管理と概念的に似ていますが，独自の実装であり，標準コマンド（[Open resource file](https://doc.4d.com/4Dv19/4D/19.5/Open-resource-file.301-6137346.ja.html)など）では代用できません。
 
-
+[PA_CreateResFile](https://developer.4d.com/4D-Plugin-SDK/CMU84569.HTM)を実行すると，新規バイナリデータベースが作成されます（`.4DB`と`.4Dindy`）。このファイルにはテーブルが存在しないため，`.4DA`ファイルから`FO4D`リソースをコピーすると，フォームがオーファンリソースとなります。すべてのユーザーフォームはテーブルフォームであるためです。
 
 <img width="461" alt="" src="https://user-images.githubusercontent.com/1725068/212274220-51396a62-03ae-42f1-8d73-8d6cc0cebaf5.png">
