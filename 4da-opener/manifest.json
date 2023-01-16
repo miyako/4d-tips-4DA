@@ -1,0 +1,11 @@
+{
+    "name": "4DA",
+    "id": 20000,
+    "commands": [
+        {
+            "theme": "4DA",
+            "syntax": "Clone structure file(&T;&T):J",
+            "threadSafe": false
+        }
+    ]
+}

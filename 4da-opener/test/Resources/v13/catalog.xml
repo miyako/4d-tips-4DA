@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base uuid="618BDB0E880B1D4EA872F502AA1F76BD">
+<table name="Table1" id="1" uuid="C9C3281AF8B2864D93EC2487C98CC613">
+	<field name="Field1" id="1" uuid="022EDD4EC656B4448657180CA1EE9E00" type="10" limiting_length="20" never_null="true"/>
+	<field name="Field2" id="2" uuid="ADE6ECABF0B40541BC946AE194E6D398" type="10" limiting_length="20" never_null="true"/>
+	<table_extra>
+		<editor_table_info>
+			<coordinates left="30" top="20" width="89" height="102"/>
+		</editor_table_info>
+	</table_extra>
+</table>
+</base>
