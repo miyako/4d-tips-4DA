@@ -112,4 +112,4 @@ MSCでアプリケーションを修復すると「リンクのないフォー�
 
 <img width="711" alt="" src="https://user-images.githubusercontent.com/1725068/212605195-97f7e20f-2117-4de2-bbf7-b0c88f6f1392.png">
 
-
+使用したプラグインは[Releases](https://github.com/miyako/4d-tips-4DA/releases)からダウンロードできます。
