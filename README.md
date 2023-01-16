@@ -61,12 +61,10 @@ v19/18で開くことができる（つまり直接アップグレードする�
 
 またv19で作成した`.4DB`にv2004やv13のリソースを書き込むと`PR4Dリソースがダメージを受けています`というエラーになり，修復ができません。
 
-```4d
-Begin SQL
-	CREATE DATABASE IF NOT EXISTS DATAFILE :$path;
-	USE DATABASE DATAFILE :$path AUTO_CLOSE;--set PR4D
-	USE DATABASE SQL_INTERNAL;
-End SQL
+```sql
+CREATE DATABASE IF NOT EXISTS DATAFILE :$path;
+USE DATABASE DATAFILE :$path AUTO_CLOSE;--set PR4D
+USE DATABASE SQL_INTERNAL;
 ```
 
 または[PA_CreateResFile](https://developer.4d.com/4D-Plugin-SDK/CMU84569.HTM)
